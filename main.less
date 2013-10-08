@@ -1,0 +1,72 @@
+@blue: cornflowerblue;
+
+body {
+  font-family: "Avenir Next", "Trebuchet MS", "Helvetica", "Arial", sans-serif;
+  font-size: 1.25em;
+  line-height: 1.4;
+  background: #F0F0F0;
+  color: #444;
+  margin: 0 auto;
+  padding: 1.25em 1.25em 5em 1.25em;
+  max-width: 35em;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 500;
+  line-height: 0.9;
+  & + p {
+    font-size: 1.33em;
+  }
+}
+
+ul, ol {
+  padding-left: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  color: @blue;
+  &:hover, &:focus, &:active {
+    color: lighten(@blue, 10%);
+  }
+}
+
+nav a {
+  padding: 0.5em;
+  margin-left: -0.5em;
+  margin-right: 0.5em;
+}
+
+footer {
+  margin: 2em 0;
+}
+
+img {
+  width: 100%;
+  @media (min-width: 35em) {
+    width: 120%;
+    margin-left: -10%;
+    margin-right: -10%;
+    border-radius: 0.15em;
+  }
+}
+
+pre {
+  padding: 0.75em;
+  border-radius: 0.15em;
+  background: #444;
+  word-break: break-all;
+  word-wrap: break-word;
+  code {
+    color: #CFCFCF;
+  }
+}
+
+code {
+  font-family: "Source Code Pro", Menlo, monospace;
+  font-size: 90%;
+}
