@@ -1,4 +1,4 @@
-# Another Article
+# Start a blog with Harp
 
 I’ve always enjoyed pretending to be a developer. Faking my way through new web technologies has become a familiar exercise. This time was different. The deception didn’t come from me, but my own development environment. I was using preprocessors to translate markup and code into something more common. Preprocessors make HTML & CSS much more capable. Repeatedly arranging them, however, didn’t make _me_ feel more capable.
 
