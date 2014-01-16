@@ -2,6 +2,7 @@ h1 Welcome to Harp
 p This is yours to own. Enjoy.
 
 ul
-    each article, slug in public.articles._data
-        li
-            a(href="/articles/#{ slug }") #{ article.title }
+  each article, slug in public.articles._data
+    if article.published!==false || environment=='development'
+      li
+        a(href="/articles/#{ slug }" class="#{ article.published==false ? 'unpublished' : '' }") #{ article.title }

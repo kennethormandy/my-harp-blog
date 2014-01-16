@@ -1,9 +1,12 @@
-!!!
+doctype
 html
   head
     link(rel="stylesheet", href="/main.css")
   body
     != partial("_shared/nav")
-    != yield
-    footer
-      != partial("_shared/nav")
+    if published!==false || environment=='development' 
+      != yield
+    else
+      != partial("404")
+      footer
+        != partial("_shared/nav")

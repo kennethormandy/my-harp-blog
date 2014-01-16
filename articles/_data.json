@@ -4,5 +4,9 @@
   },
   "start-a-blog-with-harp": {
     "title": "Start a blog with Harp"
+  },
+  "an-unfinished-article": {
+    "title": "Still working on a title",
+    "published": false
   }
 }

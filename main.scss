@@ -1,4 +1,4 @@
-@blue: cornflowerblue;
+$blue: cornflowerblue;
 
 body {
   font-family: "Avenir Next", "Trebuchet MS", "Helvetica", "Arial", sans-serif;
@@ -29,9 +29,9 @@ ul, li {
 }
 
 a {
-  color: @blue;
+  color: $blue;
   &:hover, &:focus, &:active {
-    color: lighten(@blue, 10%);
+    color: lighten($blue, 10%);
   }
 }
 
@@ -69,4 +69,11 @@ pre {
 code {
   font-family: "Source Code Pro", Menlo, monospace;
   font-size: 90%;
+}
+
+.unpublished {
+  color: lighten($blue, 20%);
+  &:after {
+    content: " (unpublished)";
+  }
 }
